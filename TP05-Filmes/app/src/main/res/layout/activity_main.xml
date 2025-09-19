@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A137E"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edt_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="#F8F7F7"
+        android:hint="Título do Filme"
+        android:inputType="text"
+        android:textColor="#3A137E"
+        android:textColorHint="#3A137E" />
+
+    <EditText
+        android:id="@+id/edt_diretor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="#FAFAFB"
+        android:hint="Diretor"
+        android:inputType="text"
+        android:textColor="#3A137E"
+        android:textColorHint="#3A137E" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="Gêneros:"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#FBF9F9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+
+        <CheckBox
+            android:id="@+id/check_acao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ação"
+            android:textColor="#FFFEFE"
+            android:textColorHint="#FFFDFD"
+            android:textIsSelectable="false" />
+
+        <CheckBox
+            android:id="@+id/check_comedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Comédia"
+            android:textColor="#FDFBFB" />
+
+        <CheckBox
+            android:id="@+id/check_drama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Drama"
+            android:textColor="#FDF9F9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <CheckBox
+            android:id="@+id/check_romance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Romance"
+            android:textColor="#FAF8F8" />
+
+        <CheckBox
+            android:id="@+id/check_terror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Terror"
+            android:textColor="#FDFCFC" />
+
+        <CheckBox
+            android:id="@+id/check_animacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Animação"
+            android:textColor="#FBF9F9" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textRatingValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avaliação: 0/5"
+        android:textColor="#FBFBFB" />
+
+    <SeekBar
+        android:id="@+id/seekBarRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBFAFA"
+        android:backgroundTint="#FDFBFB"
+        android:max="5"
+        android:progress="5"
+        android:progressBackgroundTint="#3A137E" />
+
+
+    <Button
+        android:id="@+id/btn_adicionar"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#694F99"
+        android:text="Adicionar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMovies"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
