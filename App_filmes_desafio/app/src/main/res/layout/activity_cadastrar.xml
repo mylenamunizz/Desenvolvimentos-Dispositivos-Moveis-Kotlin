@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#091662"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txt_link"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#FDFDFD"
+        android:ems="10"
+        android:hint="Link do vídeo:"
+        android:inputType="text"
+        android:textColor="#FBF8F8"
+        android:textColorHint="#FDFBFB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_descricao" />
+
+    <EditText
+        android:id="@+id/txt_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="180dp"
+        android:backgroundTint="#FDFDFD"
+        android:ems="10"
+        android:hint="Título do Filme:"
+        android:inputType="text"
+        android:textColor="#FBF8F8"
+        android:textColorHint="#FDFBFB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#FDFDFD"
+        android:ems="10"
+        android:hint="Descrição:"
+        android:inputType="text"
+        android:textColor="#FBF8F8"
+        android:textColorHint="#FDFBFB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo" />
+
+    <Button
+        android:id="@+id/btn_cadastrar"
+        android:layout_width="211dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:text="Adicionar Filme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_link" />
+
+    <Button
+        android:id="@+id/verFilmeButton"
+        android:layout_width="201dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#091662"
+        android:text="Ver Lista de Filmes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cadastrar" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="203dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#FDFBFB"
+        android:max="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_descricao" />
+</androidx.constraintlayout.widget.ConstraintLayout>
